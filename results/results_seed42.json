@@ -1,0 +1,268 @@
+{
+  "seed": 42,
+  "runs": 3,
+  "rows": [
+    {
+      "scale": "S",
+      "n_pools": 20,
+      "n_workloads": 60,
+      "n_assignments": 551,
+      "n_assignments_before_filter": 821,
+      "total_supply_demand": 11675,
+      "milp": {
+        "status": "optimal",
+        "objective": 192791.0,
+        "median_sec": 0.004660094999962894,
+        "all_runs_sec": [
+          0.006796221000058722,
+          0.004660094999962894,
+          0.004471248000072592
+        ]
+      },
+      "lp": {
+        "status": "optimal",
+        "objective": 192791.0,
+        "median_sec": 0.0010953070000141452,
+        "all_runs_sec": [
+          0.006598691000021972,
+          0.0010953070000141452,
+          0.001022816000045168
+        ]
+      },
+      "mcf": {
+        "status": "optimal",
+        "objective": 192791.0,
+        "median_sec": 0.0002557709999564395,
+        "all_runs_sec": [
+          0.0005756389999760358,
+          0.0002557709999564395,
+          0.00022557600004802225
+        ]
+      }
+    },
+    {
+      "scale": "M",
+      "n_pools": 50,
+      "n_workloads": 200,
+      "n_assignments": 4633,
+      "n_assignments_before_filter": 6977,
+      "total_supply_demand": 29335,
+      "milp": {
+        "status": "optimal",
+        "objective": 167056.0,
+        "median_sec": 0.033421330999999554,
+        "all_runs_sec": [
+          0.037179179999952794,
+          0.03151596600002904,
+          0.033421330999999554
+        ]
+      },
+      "lp": {
+        "status": "optimal",
+        "objective": 167056.0,
+        "median_sec": 0.011472725999965405,
+        "all_runs_sec": [
+          0.01192905300001712,
+          0.011472725999965405,
+          0.00991333100000702
+        ]
+      },
+      "mcf": {
+        "status": "optimal",
+        "objective": 167056.0,
+        "median_sec": 0.0013280939999731345,
+        "all_runs_sec": [
+          0.0013280939999731345,
+          0.0013152669999954014,
+          0.001373707999960061
+        ]
+      }
+    },
+    {
+      "scale": "L",
+      "n_pools": 100,
+      "n_workloads": 400,
+      "n_assignments": 18290,
+      "n_assignments_before_filter": 27930,
+      "total_supply_demand": 57361,
+      "milp": {
+        "status": "optimal",
+        "objective": 184566.0,
+        "median_sec": 0.1447185960000752,
+        "all_runs_sec": [
+          0.15188807600009113,
+          0.1447185960000752,
+          0.14128945200002363
+        ]
+      },
+      "lp": {
+        "status": "optimal",
+        "objective": 184566.0,
+        "median_sec": 0.04774672200005625,
+        "all_runs_sec": [
+          0.04663018700000521,
+          0.047965803000010965,
+          0.04774672200005625
+        ]
+      },
+      "mcf": {
+        "status": "optimal",
+        "objective": 184566.0,
+        "median_sec": 0.004935071999966567,
+        "all_runs_sec": [
+          0.005204638999998679,
+          0.004935071999966567,
+          0.004851293999990958
+        ]
+      }
+    },
+    {
+      "scale": "XL",
+      "n_pools": 200,
+      "n_workloads": 800,
+      "n_assignments": 73518,
+      "n_assignments_before_filter": 111817,
+      "total_supply_demand": 111511,
+      "milp": {
+        "status": "optimal",
+        "objective": 224697.0,
+        "median_sec": 0.7857128140000214,
+        "all_runs_sec": [
+          0.7857128140000214,
+          0.7420997639999314,
+          0.8102631030000111
+        ]
+      },
+      "lp": {
+        "status": "optimal",
+        "objective": 224697.0,
+        "median_sec": 0.26022480699998596,
+        "all_runs_sec": [
+          0.26022480699998596,
+          0.25551406800002496,
+          0.26883029999999053
+        ]
+      },
+      "mcf": {
+        "status": "optimal",
+        "objective": 224697.0,
+        "median_sec": 0.01646746299991264,
+        "all_runs_sec": [
+          0.01646746299991264,
+          0.0162209970000049,
+          0.016747308999924826
+        ]
+      }
+    },
+    {
+      "scale": "XXL",
+      "n_pools": 500,
+      "n_workloads": 2000,
+      "n_assignments": 460329,
+      "n_assignments_before_filter": 699817,
+      "total_supply_demand": 274382,
+      "milp": {
+        "status": "optimal",
+        "objective": 320489.0,
+        "median_sec": 18.054101150000065,
+        "all_runs_sec": [
+          18.398455201000047,
+          18.054101150000065,
+          17.846205776000033
+        ]
+      },
+      "lp": {
+        "status": "optimal",
+        "objective": 320489.0,
+        "median_sec": 4.601693287999979,
+        "all_runs_sec": [
+          3.6174574570000004,
+          4.601693287999979,
+          4.945292468000048
+        ]
+      },
+      "mcf": {
+        "status": "optimal",
+        "objective": 320489.0,
+        "median_sec": 0.19981534800001555,
+        "all_runs_sec": [
+          0.23169792999999572,
+          0.19981534800001555,
+          0.15272096699993654
+        ]
+      }
+    },
+    {
+      "scale": "3XL",
+      "n_pools": 1000,
+      "n_workloads": 4000,
+      "n_assignments": 1838519,
+      "n_assignments_before_filter": 2799782,
+      "total_supply_demand": 552216,
+      "milp": {
+        "status": "optimal",
+        "objective": 558206.0,
+        "median_sec": 191.011444537,
+        "all_runs_sec": [
+          191.011444537,
+          191.126553156,
+          188.02900857300006
+        ]
+      },
+      "lp": {
+        "status": "optimal",
+        "objective": 558206.0,
+        "median_sec": 25.211675496999987,
+        "all_runs_sec": [
+          25.728800957999965,
+          25.211675496999987,
+          24.92214482600002
+        ]
+      },
+      "mcf": {
+        "status": "optimal",
+        "objective": 558206.0,
+        "median_sec": 0.5388603159999548,
+        "all_runs_sec": [
+          0.5584642979999899,
+          0.5311536289999594,
+          0.5388603159999548
+        ]
+      }
+    },
+    {
+      "scale": "4XL",
+      "n_pools": 2000,
+      "n_workloads": 8000,
+      "n_assignments": 7352530,
+      "n_assignments_before_filter": 11199277,
+      "total_supply_demand": 1098797,
+      "milp": {
+        "status": "timeout",
+        "objective": Infinity,
+        "median_sec": 886.85,
+        "all_runs_sec": [886.85]
+      },
+      "lp": {
+        "status": "optimal",
+        "objective": 1098907.0,
+        "median_sec": 218.98452982599997,
+        "all_runs_sec": [
+          218.98452982599997,
+          226.42743777200008,
+          212.14222980599993
+        ]
+      },
+      "mcf": {
+        "status": "optimal",
+        "objective": 1098907.0,
+        "median_sec": 2.1678988929998013,
+        "all_runs_sec": [
+          2.1945504410000467,
+          2.1678988929998013,
+          2.1565960350001205
+        ]
+      }
+    }
+  ]
+}
