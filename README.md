@@ -43,6 +43,25 @@ uv run plot.py
 
 Output: `results/formulation_scaling_gpu.pdf`
 
+## Caching Benchmark
+
+The caching benchmark demonstrates the benefit of **model caching and incremental updates** for what-if query workloads. It compares two approaches:
+
+1. **Naive** — For each query: read from DuckDB → build full model → solve
+2. **Cached (Simulated DeQL)** — Build model once → for each query: update RHS only → re-solve
+
+The experiment shows that speedup grows with the number of queries N, as the one-time model build cost is amortized.
+
+```bash
+uv run benchmark_caching.py              # Run with XXL scale (500x2000)
+uv run benchmark_caching.py --scale 3XL  # Larger scale (1000x4000)
+uv run benchmark_caching.py --seed 123   # Different random seed
+```
+
+Output: `results/caching_benefit.pdf` and `results/results_cache_experiment_seed42.json`
+
+**Expected results**: 3-8x speedup depending on N, with larger N showing greater benefit due to amortization of the one-time model build cost.
+
 ## Scales
 
 | Label | GPU pools | Workloads | ~Assignments |
