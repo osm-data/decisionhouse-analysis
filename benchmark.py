@@ -296,11 +296,11 @@ def solve_milp(inst: AllocationInstance, time_limit: float = 600.0) -> SolverRes
 
 
 # ---------------------------------------------------------------------------
-# Formulation 2: LP relaxation (DQOP detects TU, drops binary variables)
+# Formulation 2: LP relaxation (DeOP detects TU, drops binary variables)
 # ---------------------------------------------------------------------------
 
 def solve_lp(inst: AllocationInstance, time_limit: float = 600.0) -> SolverResult:
-    """LP formulation: DQOP recognizes total unimodularity, binary vars are redundant.
+    """LP formulation: DeOP recognizes total unimodularity, binary vars are redundant.
 
     Uses batch model construction. Variables: quantity[0..n-1] continuous only.
     """
@@ -341,11 +341,11 @@ def solve_lp(inst: AllocationInstance, time_limit: float = 600.0) -> SolverResul
 
 
 # ---------------------------------------------------------------------------
-# Formulation 3: Min-cost flow (DQOP detects bipartite network structure)
+# Formulation 3: Min-cost flow (DeOP detects bipartite network structure)
 # ---------------------------------------------------------------------------
 
 def solve_mcf(inst: AllocationInstance) -> SolverResult:
-    """Min-cost flow formulation: DQOP recognizes bipartite supply-demand network."""
+    """Min-cost flow formulation: DeOP recognizes bipartite supply-demand network."""
     smcf = min_cost_flow.SimpleMinCostFlow()
 
     n_pools = inst.n_pools
