@@ -2,8 +2,8 @@
 
 Reproducibility artifact for the experiments in:
 
-> **Decisionhouse: The Data System That Decides**
-> Brucato, Kholodkov, Little, Mayer, Nguyen. PVLDB 2026 (Vision).
+> **Decisionhouse: Prescriptive Analytics in the Data Stack**
+> Matteo Brucato, Fjodor Kholodkov, Soren Little, Jakob Mayer, Duc Nguyen. Under submission at VLDB 2026 (Vision).
 
 ## Overview
 
@@ -42,6 +42,21 @@ uv run plot.py
 ```
 
 Output: `results/formulation_scaling_gpu.pdf`
+
+## Caching Benchmark
+
+The caching benchmark demonstrates the benefit of model caching and incremental updates for what-if query workloads. It compares two approaches:
+
+1. **Naive** — For each query: read from DuckDB, build full model, solve
+2. **Cached** — Build model once, for each query: update RHS only, re-solve
+
+The experiment shows that speedup grows with the number of queries N, as the one-time model build cost is amortized.
+
+```bash
+uv run benchmark_caching.py              # Run with XXL scale (500x2000)
+uv run benchmark_caching.py --scale 3XL  # Larger scale (1000x4000)
+uv run benchmark_caching.py --seed 123   # Different random seed
+```
 
 ## Scales
 
