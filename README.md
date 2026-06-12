@@ -3,7 +3,7 @@
 Reproducibility artifact for the experiments in:
 
 > **Decisionhouse: Prescriptive Analytics in the Data Stack**
-> Matteo Brucato, Fjodor Kholodkov, Soren Little, Jakob Mayer, Duc Nguyen. Under submission at VLDB 2026 (Vision).
+> Matteo Brucato, Fjodor Kholodkov, Soren Little, Jakob Mayer, Duc Nguyen. VLDB 2026 (Vision).
 
 ## Overview
 
