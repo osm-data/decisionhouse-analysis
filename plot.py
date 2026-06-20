@@ -3,6 +3,8 @@
 import json
 import matplotlib
 matplotlib.use("Agg")
+matplotlib.rcParams["pdf.fonttype"] = 42  # embed TrueType, not Type 3, for PDF/A compliance
+matplotlib.rcParams["ps.fonttype"] = 42
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 from pathlib import Path
