@@ -58,6 +58,15 @@ uv run benchmark_caching.py --scale 3XL  # Larger scale (1000x4000)
 uv run benchmark_caching.py --seed 123   # Different random seed
 ```
 
+**Reproducing the paper's caching numbers.** The incremental-materialization result in Section 3 is produced by the caching benchmark at the XXL (~460K assignments) and 3XL (~1.8M) scales with seed 42:
+
+```bash
+uv run benchmark_caching.py --scale XXL --seed 42
+uv run benchmark_caching.py --scale 3XL --seed 42
+```
+
+Each run prints the per-query wall-clock speedup across query counts N and saves raw data to `results/results_cache_experiment_<scale>_seed42.json` (included for both scales). Assignment counts are post-filter (latency ≤ 200ms); the Scales table below lists the pre-filter counts.
+
 ## Scales
 
 | Label | GPU pools | Workloads | ~Assignments |
