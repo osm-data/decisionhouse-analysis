@@ -7,7 +7,7 @@ running example) using three formulations at increasing scale:
 
   1. Generic MILP  — binary active + continuous quantity + big-M  (HiGHS branch-and-bound)
   2. LP relaxation  — continuous only, exploiting total unimodularity  (HiGHS simplex)
-  3. Min-cost flow  — network simplex on bipartite supply-demand graph  (OR-Tools)
+  3. Min-cost flow  — cost-scaling min-cost flow on bipartite supply-demand graph  (OR-Tools)
 
 The problem: an AI inference platform allocates GPU compute (measured in
 GPU-hours) from GPU pools to inference workloads, minimizing total cost

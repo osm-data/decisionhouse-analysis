@@ -11,7 +11,7 @@ This benchmark solves a GPU-to-workload allocation problem (the running example 
 
 1. **Generic MILP** — binary `active` + continuous `quantity` + big-M linking (HiGHS branch-and-bound)
 2. **LP relaxation** — continuous variables only, exploiting total unimodularity (HiGHS simplex)
-3. **Min-cost flow** — bipartite supply-demand graph (OR-Tools network simplex)
+3. **Min-cost flow** — bipartite supply-demand graph (OR-Tools min-cost flow, cost-scaling)
 
 All three formulations produce provably identical optimal solutions. The benchmark measures how structure recognition (selecting the right formulation) affects solve time as problem size grows.
 
